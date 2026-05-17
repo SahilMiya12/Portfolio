@@ -4,74 +4,74 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Nexus AI Platform",
-      description: "Enterprise AI platform with real-time analytics, custom model training, and API integration. Features include data preprocessing, model training, and interactive dashboards.",
-      tech: ["React", "Python", "TensorFlow", "FastAPI"],
+      title: "Subscription-Based Fresh Grocer Delivery System",
+      description: "A full-stack MERN application for grocery subscription management. Features include user authentication, subscription plans, order tracking, payment integration (Razorpay/Stripe), admin dashboard for managing products and deliveries, real-time order status updates, and email notifications for order confirmations and delivery alerts.",
+      tech:["React", "Node.js", "Express.js", "MongoDB", "Razorpay", "Socket.io", "JWT", "FastAPI"],
       image: "/images/project1.jpg",
       gradient: "linear-gradient(135deg, #6366f1, #8b5cf6)",
       color: "#6366f1",
-      github: "https://github.com/yourusername/nexus-ai",
-      demo: "https://nexus-ai-demo.com",
+      github: "https://github.com/SahilMiya12/fresh-grocer.git",
+      demo: "https://fresh-grocer.vercel.app",
       featured: true
     },
     {
       id: 2,
-      title: "MarketFlow",
-      description: "Full-featured e-commerce platform with AI recommendations, payment gateway integration, inventory management, and admin dashboard.",
-      tech: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
+      title: "Healthcare Appointment & Records System",
+      description: "A comprehensive web-based healthcare management platform enabling patients to book appointments online, doctors to manage schedules and issue digital prescriptions, and administrators to oversee all operations. Features include role-based access control (Patient, Doctor, Admin), real-time appointment availability checking, automated email notifications, prescription management, medical records tracking, appointment rescheduling, and cancelation. Built with secure JWT authentication and responsive design for seamless access across devices.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Nodemailer", "CSS3"],
       image: "/images/project2.jpg",
       gradient: "linear-gradient(135deg, #ec4899, #f59e0b)",
       color: "#ec4899",
-      github: "https://github.com/yourusername/marketflow",
-      demo: "https://marketflow-demo.com",
+      github: "https://github.com/SahilMiya12/Healthappointment-FSD.git",
+      demo: "https://healthappointment.vercel.app",
       featured: true
     },
     {
       id: 3,
-      title: "SwiftTask Pro",
-      description: "Project management tool with kanban boards, real-time updates, team collaboration, time tracking, and analytics dashboard.",
-      tech: ["React", "TypeScript", "GraphQL", "Prisma"],
-      image: "/images/project3.jpg",
-      gradient: "linear-gradient(135deg, #06b6d4, #3b82f6)",
-      color: "#06b6d4",
-      github: "https://github.com/yourusername/swifttask",
-      demo: "https://swifttask-demo.com",
+      title: "Education Dropout Prediction",
+      description: "AI-powered student dropout prediction system that analyzes academic performance, attendance, and behavioral patterns to identify at-risk students and provide early intervention insights through an intelligent chatbot assistant.",
+      tech: ["Python", "Streamlit", "Machine Learning", "Scikit-learn", "Groq AI", "Pandas"],
+      image: "images/project3.jpg",
+      gradient: "linear-gradient(135deg, #f59e0b, #ef4444)",
+      color: "#f59e0b",
+      github: "https://github.com/SahilMiya12/Education-Dropout-Prediction.git",
+      demo: "https://education-dropout-prediction.vercel.app",
       featured: false
     },
     {
       id: 4,
-      title: "HealthTrack",
-      description: "Cross-platform health monitoring app with wearable integration, AI health insights, medication reminders, and fitness tracking.",
-      tech: ["React Native", "Node.js", "MongoDB", "Firebase"],
+      title: "Expense Split Tracker",
+      description: "A smart expense splitting application that helps groups track shared expenses, calculate balances, manage payments, and simplify bill sharing in real-time.",
+      tech: ["React", "Spring Boot", "MySQL", "JWT", "Tailwind CSS"],
       image: "/images/project4.jpg",
-      gradient: "linear-gradient(135deg, #22c55e, #14b8a6)",
-      color: "#22c55e",
-      github: "https://github.com/yourusername/healthtrack",
-      demo: "https://healthtrack-demo.com",
+      gradient: "linear-gradient(135deg, #06b6d4, #3b82f6)",
+      color: "#06b6d4",
+      github: "https://github.com/SahilMiya12/Expense-Split-Tracker.git",
+      demo: "https://expense-split-tracker.vercel.app",
       featured: false
     },
     {
       id: 5,
-      title: "FinDash Analytics",
-      description: "Financial dashboard with predictive analytics, real-time stock data, portfolio tracking, and custom report generation.",
-      tech: ["Vue.js", "D3.js", "Django", "Celery"],
+      title: "Finance Investment Portfolio Management",
+      description: "A modern finance and investment management platform that helps users track portfolios, monitor investments, analyze market performance, and manage financial assets efficiently.",
+      tech: ["React", "Spring Boot", "MySQL", "JWT", "Tailwind CSS"],
       image: "/images/project5.jpg",
-      gradient: "linear-gradient(135deg, #f59e0b, #ef4444)",
-      color: "#f59e0b",
-      github: "https://github.com/yourusername/findash",
-      demo: "https://findash-demo.com",
+      gradient: "linear-gradient(135deg, #22c55e, #14b8a6)",
+      color: "#22c55e",
+      github: "https://github.com/SahilMiya12/Finance-Investment-Portfolio-Management.git",
+      demo: "https://finance-investment-portfolio-management.vercel.app",
       featured: false
     },
     {
-      id: 6,
-      title: "SmartHome IoT Hub",
-      description: "Centralized IoT control panel for smart home devices with real-time monitoring, automation rules, and voice control integration.",
-      tech: ["React", "Node.js", "MQTT", "InfluxDB"],
+     id: 6,
+     title: "Fitness Tracker",
+     description: "AI-powered fitness tracking platform that helps users monitor workouts, track health progress, manage fitness goals, and analyze performance through interactive dashboards and smart analytics.",
+     tech: ["Django", "Python", "SQLite", "HTML", "CSS", "JavaScript"],
       image: "/images/project6.jpg",
       gradient: "linear-gradient(135deg, #8b5cf6, #6366f1)",
       color: "#8b5cf6",
-      github: "https://github.com/yourusername/smarthome",
-      demo: "https://smarthome-demo.com",
+      github: "https://github.com/SahilMiya12/fitness-tracker.git",
+      demo: "https://fitness-tracker.vercel.app",
       featured: false
     }
   ];
@@ -84,7 +84,7 @@ const Projects = () => {
       <div className="container">
         <div className="projects-header">
           <div className="projects-badge">
-            <span>🚀</span>
+            <span>💎</span>
             Portfolio
           </div>
           <h2 className="projects-title">
@@ -97,7 +97,7 @@ const Projects = () => {
 
         {/* Featured Projects */}
         <div className="featured-section">
-          <h3 className="featured-title">⭐ Featured work</h3>
+          <h3 className="featured-title">🔮 Featured work</h3>
           <div className="featured-grid">
             {featuredProjects.map(project => (
               <div key={project.id} className="featured-card">
@@ -143,7 +143,7 @@ const Projects = () => {
 
         {/* Other Projects */}
         <div className="projects-section">
-          <h3 className="projects-subtitle">More projects</h3>
+          <h3 className="projects-subtitle"> 📂 More projects</h3>
           <div className="projects-grid">
             {otherProjects.map(project => (
               <div key={project.id} className="project-card">
@@ -176,7 +176,7 @@ const Projects = () => {
         </div>
 
         <div className="projects-cta">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="projects-cta-btn">
+          <a href="https://github.com/SahilMiya12" target="_blank" rel="noopener noreferrer" className="projects-cta-btn">
             View all on GitHub
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
