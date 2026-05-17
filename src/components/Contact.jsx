@@ -45,7 +45,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4>Email</h4>
-                  <a href="mailto:sahil@example.com">sahil@example.com</a>
+                  <a href="mailto:sahilmiya723@gmail.com">sahilmiya723@gmail.com</a>
                   <p>Response within 24 hours</p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4>Location</h4>
-                  <p>India</p>
+                  <p>Chhapkaiya-2, Birgunj, Parsa, Nepal</p>
                   <p>Remote / On-site</p>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Contact = () => {
                 <div>
                   <h4>Availability</h4>
                   <p>Open for internships</p>
-                  <p>Summer 2025</p>
+                  <p>Summer 2026</p>
                 </div>
               </div>
             </div>

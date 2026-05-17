@@ -30,32 +30,47 @@
   width: 100%;
 }
 
-/* Logo */
+/* Logo with Image */
 .logo {
   display: flex;
   align-items: center;
-  gap: 6px;
   text-decoration: none;
-  transition: opacity 0.3s;
+  transition: all 0.3s;
 }
 
 .logo:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+  transform: scale(0.98);
 }
 
-.logo-mark {
-  font-size: 26px;
+.logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Fallback text logo (if image fails to load) */
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.logo-text-main {
+  font-size: 18px;
   font-weight: 800;
   background: linear-gradient(135deg, #6366f1, #ec4899);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  letter-spacing: 1px;
 }
 
-.logo-text {
-  font-size: 22px;
-  font-weight: 700;
-  color: white;
+.logo-sub {
+  font-size: 8px;
+  font-weight: 500;
+  color: #a78bfa;
+  letter-spacing: 0.5px;
 }
 
 /* Navigation - Desktop */
@@ -228,6 +243,10 @@
     padding: 10px 0;
   }
   
+  .logo-img {
+    height: 38px;
+  }
+  
   .resume-btn span {
     display: inline-block;
   }
@@ -257,12 +276,16 @@
     padding: 8px 0;
   }
   
-  .logo-text {
-    font-size: 18px;
+  .logo-img {
+    height: 30px;
   }
   
-  .logo-mark {
-    font-size: 22px;
+  .logo-text-main {
+    font-size: 14px;
+  }
+  
+  .logo-sub {
+    font-size: 6px;
   }
   
   .resume-btn {

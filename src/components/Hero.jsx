@@ -7,8 +7,8 @@ const Hero = () => {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Sahil_Miya_Resume.pdf';
+    link.href = '/Sahil_resume.pdf';
+    link.download = 'Sahil_Resume.pdf';
     link.click();
   };
 
@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="hero-left">
             <div className="hero-label">
               <span className="hero-label-dot"></span>
-              Available for internships · Summer 2025
+              Available for internships · Summer 2026
             </div>
             
             <h1 className="hero-heading">
@@ -63,28 +63,28 @@ const Hero = () => {
                 <span className="hero-stat-label">Years</span>
               </div>
               <div className="hero-stat">
-                <span className="hero-stat-value">500+</span>
+                <span className="hero-stat-value">300+</span>
                 <span className="hero-stat-label">DSA Problems</span>
               </div>
             </div>
             
             <div className="hero-social">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://github.com/SahilMiya12" target="_blank" rel="noopener noreferrer" className="social-link">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.88-.01-1.73-2.78.6-3.37-1.2-3.37-1.2-.45-1.15-1.11-1.45-1.11-1.45-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"/>
                 </svg>
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/in/sahil-miya-b98696333/" target="_blank" rel="noopener noreferrer" className="social-link">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
                 </svg>
               </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://x.com/Sahil_Malik81" target="_blank" rel="noopener noreferrer" className="social-link">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </a>
-              <a href="mailto:sahil@example.com" className="social-link">
+              <a href="mailto:sahilmiya723@gmail.com" className="social-link">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M22 6L12 13L2 6M22 6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6l10 7l10-7z"/>
                 </svg>
@@ -100,7 +100,7 @@ const Hero = () => {
                 <div className="visual-avatar">
                   <div className="avatar-container">
                     <img 
-                      src="/images/profile.jpg" 
+                      src="/images/profile1.jpg" 
                       alt="Sahil Miya" 
                       className="hero-profile-image"
                       onError={(e) => {

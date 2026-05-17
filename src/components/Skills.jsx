@@ -18,17 +18,18 @@ const Skills = () => {
     { name: 'Next.js', category: 'frontend', level: 85, icon: '▲', color: '#000000', description: 'Full-stack React framework' },
     { name: 'TypeScript', category: 'frontend', level: 85, icon: '📘', color: '#3178C6', description: 'Type-safe JavaScript' },
     { name: 'Tailwind CSS', category: 'frontend', level: 92, icon: '🎨', color: '#06B6D4', description: 'Utility-first CSS' },
-    { name: 'Framer Motion', category: 'frontend', level: 80, icon: '🎭', color: '#0055FF', description: 'Animation library' },
+   // { name: 'Framer Motion', category: 'frontend', level: 80, icon: '🎭', color: '#0055FF', description: 'Animation library' },
     // Backend
     { name: 'Node.js', category: 'backend', level: 88, icon: '🟢', color: '#339933', description: 'JavaScript runtime' },
     { name: 'Python', category: 'backend', level: 85, icon: '🐍', color: '#3776AB', description: 'Versatile programming' },
     { name: 'Express.js', category: 'backend', level: 87, icon: '🚂', color: '#000000', description: 'Web framework' },
-    { name: 'GraphQL', category: 'backend', level: 80, icon: '📊', color: '#E10098', description: 'API query language' },
+    //{ name: 'GraphQL', category: 'backend', level: 80, icon: '📊', color: '#E10098', description: 'API query language' },
     // Database
     { name: 'MongoDB', category: 'database', level: 85, icon: '🍃', color: '#47A248', description: 'NoSQL database' },
     { name: 'PostgreSQL', category: 'database', level: 82, icon: '🐘', color: '#336791', description: 'Relational database' },
-    { name: 'Redis', category: 'database', level: 75, icon: '🔴', color: '#DC382D', description: 'In-memory cache' },
-    { name: 'Firebase', category: 'database', level: 80, icon: '🔥', color: '#FFCA28', description: 'Backend platform' },
+    { name: 'MySQL', category: 'database', level: 87, icon: '🐬', color: '#4479A1', description: 'Relational database management' },
+    //{ name: 'Redis', category: 'database', level: 75, icon: '🔴', color: '#DC382D', description: 'In-memory cache' },
+   // { name: 'Firebase', category: 'database', level: 80, icon: '🔥', color: '#FFCA28', description: 'Backend platform' },
     // Tools
     { name: 'Git', category: 'tools', level: 92, icon: '📝', color: '#F05032', description: 'Version control' },
     { name: 'Docker', category: 'tools', level: 75, icon: '🐳', color: '#2496ED', description: 'Containerization' },
@@ -111,7 +112,7 @@ const Skills = () => {
         <div className="skills-footer">
           <div className="skills-quote">
             <span className="quote-icon">⚡</span>
-            <p>Always learning, always growing. Currently exploring AI/ML and Cloud Architecture.</p>
+            <p>Always learning, always growing. Currently exploring DSA Problems, AI/ML and Cloud Architecture.</p>
           </div>
         </div>
       </div>

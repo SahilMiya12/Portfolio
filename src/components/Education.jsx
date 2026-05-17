@@ -6,37 +6,37 @@ const Education = () => {
       level: "University",
       icon: "🎓",
       degree: "Bachelor of Technology in Computer Science",
-      institution: "XYZ University",
-      location: "India",
-      period: "2022 - 2026",
-      cgpa: "8.7/10",
+      institution: "Sri Eshwar College of Engineering",
+      location: "Kinathukadavu, Coimbatore - 641202, Tamil Nadu, India",
+      period: "2024 - 2028",
+      cgpa: "7.9/10",
       current: true,
-      description: "Currently in 3rd year, 6th semester. Focus on full-stack development, DSA, and system design.",
-      achievements: ["Academic Excellence Award", "Research Paper Published"]
+      description: "Currently in 3rd year, 5th semester. Focus on full-stack development, web technologies, Software Engineering, DSA, and system design.",
+      achievements: ["Participation in Tech Event & Hackathon", "Class Committee Member in 2nd Year"]
     },
     {
       level: "Higher Secondary (12th)",
       icon: "📚",
-      degree: "Senior Secondary Education",
-      institution: "XYZ Senior Secondary School",
-      location: "India",
-      period: "2020 - 2022",
-      percentage: "88%",
+      degree: "National Examination Board (NEB) - Science Stream",
+      institution: "Himalayan Pyramid College",
+      location: "Shreepur-11, Birginj, Parsa, Nepal",
+      period: "2022 - 2024",
+      percentage: "84.5%",
       current: false,
-      description: "Science stream with Computer Science, Physics, Chemistry, Mathematics.",
+      description: "Science stream with Biology, Physics, Chemistry, Mathematics.",
       achievements: ["School Topper", "Science Fair Winner"]
     },
     {
       level: "Secondary (10th)",
       icon: "📖",
-      degree: "Secondary Education",
-      institution: "XYZ High School",
-      location: "India",
-      period: "2018 - 2020",
-      percentage: "85%",
+      degree: "Secondary Education Examination (SEE)",
+      institution: "Green Land Secondary School",
+      location: "Chhapkaiya-2, Birgunj, Parsa, Nepal",
+      period: "2018 - 2022",
+      percentage: "76.25%",
       current: false,
       description: "Core subjects: Mathematics, Science, English, Social Studies.",
-      achievements: ["Perfect Attendance", "Math Olympiad Participant"]
+      achievements: ["Perfect Attendance", "Discipline Student"]
     }
   ];
 
@@ -53,7 +53,7 @@ const Education = () => {
             My <span className="gradient-text">Education</span>
           </h2>
           <p className="education-subtitle">
-            From school to university — my complete academic journey
+            From school to university — My complete academic journey
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const Education = () => {
                     {edu.current && (
                       <div className="timeline-stat">
                         <span className="stat-icon">🎯</span>
-                        <span>Current: 3rd Year · 6th Semester</span>
+                        <span>Current: 3rd Year · 5th Semester</span>
                       </div>
                     )}
                   </div>
@@ -121,21 +121,21 @@ const Education = () => {
             <div className="summary-icon">🎯</div>
             <div className="summary-content">
               <h4>Current Focus</h4>
-              <p>Full-stack Development, DSA, System Design, Cloud Computing</p>
+              <p>Full-Stack Development, Web Technologies, Software Engineering, DSA, System Design and Cloud Computing</p>
             </div>
           </div>
           <div className="summary-card">
             <div className="summary-icon">📚</div>
             <div className="summary-content">
               <h4>Learning Goals</h4>
-              <p>Mastering React, Node.js, and preparing for campus placements</p>
+              <p>Mastering React, Node.js, MongoDB, Java and preparing for campus placements</p>
             </div>
           </div>
           <div className="summary-card">
             <div className="summary-icon">💼</div>
             <div className="summary-content">
               <h4>Open for</h4>
-              <p>Internships (Summer 2025) · Full-time opportunities</p>
+              <p>Internships (Summer 2026) · Full-time opportunities</p>
             </div>
           </div>
         </div>

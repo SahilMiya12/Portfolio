@@ -40,14 +40,11 @@
   max-width: 350px;
 }
 
+/* Footer Logo with Image */
 .footer-logo {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
   text-decoration: none;
-  font-size: 26px;
-  font-weight: 800;
-  color: white;
   margin-bottom: 20px;
   transition: all 0.3s;
 }
@@ -57,12 +54,34 @@
   transform: translateX(3px);
 }
 
-.logo-gradient {
+.footer-logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Fallback text logo */
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-logo-main {
+  font-size: 20px;
+  font-weight: 800;
   background: linear-gradient(135deg, #6366f1, #ec4899);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.footer-logo-sub {
+  font-size: 9px;
+  font-weight: 500;
+  color: #a78bfa;
+  letter-spacing: 0.5px;
 }
 
 .brand-text {
@@ -195,8 +214,13 @@
     text-align: center;
   }
   
+  .footer-logo {
+    justify-content: center;
+  }
+  
   .brand-text {
     max-width: 100%;
+    text-align: center;
   }
   
   .social-icons {
@@ -228,6 +252,18 @@
     padding: 0 20px;
   }
   
+  .footer-logo-img {
+    height: 40px;
+  }
+  
+  .footer-logo-main {
+    font-size: 16px;
+  }
+  
+  .footer-logo-sub {
+    font-size: 7px;
+  }
+  
   .footer-links {
     flex-direction: column;
     align-items: center;
@@ -241,5 +277,11 @@
   
   .footer::before {
     width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo-img {
+    height: 35px;
   }
 }

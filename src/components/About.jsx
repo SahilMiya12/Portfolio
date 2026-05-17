@@ -36,8 +36,8 @@ const About = () => {
                   <div className="highlight-icon">🎓</div>
                   <div className="highlight-content">
                     <h4>Education</h4>
-                    <p>B.Tech Computer Science, 3rd Year</p>
-                    <span>CGPA: 8.7/10</span>
+                    <p>B.E Computer Science and Engineering, 3rd Year</p>
+                    <span>CGPA: 7.9/10</span>
                   </div>
                 </div>
                 <div className="highlight-item">
@@ -45,14 +45,14 @@ const About = () => {
                   <div className="highlight-content">
                     <h4>Availability</h4>
                     <p>Open for internships & freelance</p>
-                    <span>Summer 2025</span>
+                    <span>Summer 2026</span>
                   </div>
                 </div>
                 <div className="highlight-item">
                   <div className="highlight-icon">📍</div>
                   <div className="highlight-content">
                     <h4>Location</h4>
-                    <p>India</p>
+                    <p>Sri Eshwar College of Engineering, Kondampatti, Vadasithur, Kinathukadavu, Coimbatore - 641202, Tamil Nadu, India</p>
                     <span>Remote / On-site</span>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ const About = () => {
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
                 </a>
-                <a href="/resume.pdf" download className="about-secondary-btn">
+                <a href="public/Sahil_resume.pdf" download="Sahil_Resume.pdf" className="about-secondary-btn">
                   Download resume
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
@@ -97,7 +97,7 @@ const About = () => {
                   <div className="stat-label">Years of coding</div>
                 </div>
                 <div className="about-stat">
-                  <div className="stat-value">500+</div>
+                  <div className="stat-value">300+</div>
                   <div className="stat-label">DSA problems solved</div>
                 </div>
                 <div className="about-stat">

@@ -3,11 +3,12 @@ import './Footer.css';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  // UPDATE THESE WITH YOUR ACTUAL SOCIAL LINKS
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/yourusername', icon: 'github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername', icon: 'linkedin' },
-    { name: 'Twitter', url: 'https://twitter.com/yourusername', icon: 'twitter' },
-    { name: 'Instagram', url: 'https://instagram.com/yourusername', icon: 'instagram' }
+    { name: 'GitHub', url: 'https://github.com/SahilMiya12', icon: 'github' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/sahil-miya-b98696333/', icon: 'linkedin' },
+    { name: 'Twitter', url: 'https://x.com/Sahil_Malik81', icon: 'twitter' },
+    { name: 'Instagram', url: 'https://www.instagram.com/sahil_malik723/', icon: 'instagram' }
   ];
 
   const getIcon = (iconName) => {
@@ -45,11 +46,22 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-grid">
-          {/* Brand */}
+          {/* Brand with Logo Image */}
           <div className="footer-brand">
             <a href="#home" className="footer-logo">
-              <span className="logo-gradient">✦</span>
-              <span>Sahil.</span>
+              <img 
+                src="/images/logo.png" 
+                alt="SAHIL" 
+                className="footer-logo-img"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="footer-logo-text" style={{ display: 'none' }}>
+                <span className="footer-logo-main">SAHIL</span>
+                <span className="footer-logo-sub">DEVELOPER | ENGINEER</span>
+              </div>
             </a>
             <p className="brand-text">
               Building digital experiences <br />

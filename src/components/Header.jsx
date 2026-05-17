@@ -49,8 +49,8 @@ const Header = () => {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Sahil_Miya_Resume.pdf';
+    link.href = '/Sahil_resume.pdf';
+    link.download = 'Sahil_Resume.pdf';
     link.click();
   };
 
@@ -58,9 +58,21 @@ const Header = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="header-inner">
+          {/* Logo with Image */}
           <a href="#home" className="logo">
-            <span className="logo-mark">✦</span>
-            <span className="logo-text">Sahil</span>
+            <img 
+              src="/images/logo.png" 
+              alt="SAHIL" 
+              className="logo-img"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+            <div className="logo-text-group" style={{ display: 'none' }}>
+              <span className="logo-text-main">SAHIL</span>
+              <span className="logo-sub">DEVELOPER | ENGINEER</span>
+            </div>
           </a>
           
           <nav className={`nav ${isOpen ? 'open' : ''}`}>
