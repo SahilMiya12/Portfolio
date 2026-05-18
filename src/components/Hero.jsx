@@ -100,7 +100,7 @@ const Hero = () => {
                 <div className="visual-avatar">
                   <div className="avatar-container">
                     <img 
-                      src="/images/profile1.jpg" 
+                      src="/images/profile2.jpg" 
                       alt="Sahil Miya" 
                       className="hero-profile-image"
                       onError={(e) => {

@@ -5,16 +5,52 @@ const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
+  // YOUR WEB3FORMS ACCESS KEY
+  const WEB3FORMS_ACCESS_KEY = 'aa2be2a6-1c37-4704-abc9-07f5f1b2f217';
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setSent(true);
+    setError(false);
+
+    const formData = new FormData();
+    formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+    formData.append('name', form.name);
+    formData.append('email', form.email);
+    formData.append('message', form.message);
+    formData.append('subject', `✨ Portfolio Contact: ${form.name} wants to connect`);
+    
+    // 🔥 THIS LINE FIXES THE SENDER NAME 🔥
+    formData.append('from_name', 'Sahil | Software Engineer');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSent(true);
+        setLoading(false);
+        setForm({ name: '', email: '', message: '' });
+        setTimeout(() => setSent(false), 5000);
+      } else {
+        throw new Error('Failed to send');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setError(true);
       setLoading(false);
-      setTimeout(() => setSent(false), 3000);
-      setForm({ name: '', email: '', message: '' });
-    }, 1000);
+      setTimeout(() => setError(false), 5000);
+    }
+  };
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   return (
@@ -83,27 +119,30 @@ const Contact = () => {
               <div className="form-group">
                 <input 
                   type="text" 
+                  name="name"
                   placeholder="Your name" 
                   value={form.name}
-                  onChange={(e) => setForm({...form, name: e.target.value})}
+                  onChange={handleChange}
                   required
                 />
               </div>
               <div className="form-group">
                 <input 
                   type="email" 
+                  name="email"
                   placeholder="Your email" 
                   value={form.email}
-                  onChange={(e) => setForm({...form, email: e.target.value})}
+                  onChange={handleChange}
                   required
                 />
               </div>
               <div className="form-group">
                 <textarea 
+                  name="message"
                   placeholder="Tell me about your project..." 
                   rows="5"
                   value={form.message}
-                  onChange={(e) => setForm({...form, message: e.target.value})}
+                  onChange={handleChange}
                   required
                 ></textarea>
               </div>
@@ -119,7 +158,8 @@ const Contact = () => {
                   </>
                 )}
               </button>
-              {sent && <div className="contact-success">Message sent! I'll get back to you soon 🎉</div>}
+              {sent && <div className="contact-success">✅ Message sent! I'll get back to you soon.</div>}
+              {error && <div className="contact-error">❌ Failed to send. Please try again.</div>}
             </form>
           </div>
         </div>
