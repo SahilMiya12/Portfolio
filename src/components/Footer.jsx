@@ -98,8 +98,8 @@ const Footer = () => {
             <div className="link-group">
               <h4>Resources</h4>
               <ul>
-                <li><a href="/resume.pdf" download>Resume</a></li>
-                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                <li><a href="/Sahil_resume.pdf" download>Resume</a></li>
+                <li><a href="https://github.com/SahilMiya12" target="_blank">GitHub</a></li>
                 <li><a href="#">Blog (Soon)</a></li>
               </ul>
             </div>
